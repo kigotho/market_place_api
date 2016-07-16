@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.1.11'
 
 # Use sqlite3 as the database for Active Record
 
@@ -22,7 +22,14 @@ gem 'jquery-rails'
 #Api gems
 gem 'active_model_serializers'
 
+gem "devise"
 
+
+group :test do
+  gem "rspec-rails", "~> 2.14"
+  gem "factory_girl_rails"
+  gem 'ffaker'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
