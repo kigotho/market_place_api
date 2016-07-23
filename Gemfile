@@ -25,12 +25,11 @@ gem 'active_model_serializers'
 gem "devise"
 
 
-group :test do
+group :development, :test do
   gem "rspec-rails", "~> 2.14"
+  gem 'shoulda-matchers', "~>2.8.0"
   gem "factory_girl_rails"
   gem 'ffaker'
-  gem "shoulda-matchers"
-
 end
 
 group :doc do

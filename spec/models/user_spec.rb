@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'shoulda-matchers'
 
 describe User do
   before {@user = FactoryGirl.build(:user)}
