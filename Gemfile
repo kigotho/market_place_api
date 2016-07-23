@@ -6,7 +6,7 @@ gem 'rails', '4.1.11'
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -24,6 +24,12 @@ gem 'active_model_serializers'
 
 gem "devise"
 
+gem 'sabisu_rails'
+gem 'compass-rails'
+gem 'furatto'
+gem 'font-awesome-rails'
+gem 'simple_form'
+
 
 group :development, :test do
   gem "rspec-rails", "~> 2.14"
@@ -40,6 +46,11 @@ end
 
 group :development do
   gem 'sqlite3'
+
+end
+
+group :assets do
+  gem 'sass-rails'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
